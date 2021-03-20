@@ -10,10 +10,21 @@
 // }
 
 // TIPOS DE DADOS
-fn main() {
-    let x: u64 = 29; // dados inteiro tipo "u" nao permite numeros negativos
-    let z: f64 = 1.75; // float
-    let w: bool = false; // boolean
+// fn main() {
+//     let x: u64 = 29; // dados inteiro tipo "u" nao permite numeros negativos
+//     let z: f64 = 1.75; // float
+//     let w: bool = false; // boolean
 
-    println!("{}, {}, {}", x,z, w)
+//     println!("{}, {}, {}", x,z, w)
+// }
+
+// CONDICIONAIS
+fn main(){
+    let number1 = 42;
+    let number2 = 53;
+    if number1 > number2 {
+        println!("{} > {}", number1, number2)
+    } else {
+        println!("{} > {}", number2, number1)
+    }
 }

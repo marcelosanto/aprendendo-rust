@@ -38,3 +38,12 @@ Para tornar uma variável mutável, precisamos usar a palavra-chave mut:
 let mut age = 42;
 
 age += 1;
+
+
+# Tipos de Inteiros
+
+<p>O u significa unsigned, enquanto o i significa signed, e o número que o segue é o número de bits. Por exemplo, um número do tipo u8 pode estar entre 0 e 255. E um numero do tipo i16 podem estar entre -32768  e 32767. As variantes de tamanho são os tipos inteiros de tamanho de ponteiro: usize e isize que são de 64 bits em uma CPU de 64 bits. O tipo de número inteiro padrão é i32, que significa que este tipo será usado pela inferência de tipo quando não puder escolher um tipo mais específico.</p>
+
+# Tipos de Pontos Flutuantes
+
+<p>Existem dois tipos de ponto flutuante: f32 e f64, sendo o último o padrão. O número após f representa o número de bits do tipo. Um exemplo de valor para ponto flutuante de exemplo é 0,31415e1.</p>
