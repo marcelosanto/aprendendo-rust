@@ -1,30 +1,20 @@
-// fn main() {
-//     // variaveis em rust são imutáveis
-//     let name: &str = "Marcelo"; // declarando variavel e tipando o dado
-    
-//     // para torna a variavel mutavel usa-se o "mut" antes do nome
-//     let mut idade: i32 = 29;
-//     idade = 30;
-    
-//     println!("Olá meu nome é {}, e tenho {} anos", name, idade); // chamando a variavel
-// }
+use std::io;
 
-// TIPOS DE DADOS
-// fn main() {
-//     let x: u64 = 29; // dados inteiro tipo "u" nao permite numeros negativos
-//     let z: f64 = 1.75; // float
-//     let w: bool = false; // boolean
+fn convert_str_to_int(data_input: & String) -> i32{
+    let x = data_input.trim().parse::<i32>().unwrap();
+    x
+}
 
-//     println!("{}, {}, {}", x,z, w)
-// }
+fn main() {
+    let mut number1 = String::new();
+    io::stdin().read_line(&mut number1).expect("Erro ao ler number1");
 
-// CONDICIONAIS
-fn main(){
-    let number1 = 42;
-    let number2 = 53;
-    if number1 > number2 {
-        println!("{} > {}", number1, number2)
+    let mut number2 = String::new();
+    io::stdin().read_line(&mut number2).expect("Erro ao ler number2");
+
+    if convert_str_to_int(&number1) > convert_str_to_int(&number2){
+        println!("O numero {} eh maior que {}", number1, number2)
     } else {
-        println!("{} > {}", number2, number1)
+        print!("O numero {} eh menor ou igual ao {}", number1, number2)
     }
 }
